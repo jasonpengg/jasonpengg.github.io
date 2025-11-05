@@ -293,6 +293,7 @@ section::backdrop{
     overflow: hidden;
     height: var(--full);
     width: var(--full);
+    aspect-ratio: 1/1;
 }
 
 .apps-container{
@@ -308,15 +309,16 @@ section::backdrop{
     border-radius: 50%;
     overflow: hidden;
     aspect-ratio: 1/1;
-    
 }
-@media screen and (max-width: 1500px){
+@media screen and (max-width: 1024px){
+    #page1{
+        height: fit-content;
+    }
     .hotbar a{
         font-size: 2em;
     }
     .textbox{
-        flex-direction: column;
-        gap: 0;    
+        flex-direction: column;  
         margin-top: calc(var(--hotbar-height)*1.25);
         padding-bottom: var(--hotbar-height);
     }
@@ -326,12 +328,20 @@ section::backdrop{
         width: 80%;
         height: 70%;
     }
+    .leftside{
+        height: var(--half);
+        width: var(--half);
+    }
     .picture{
-        height: 50%;
-        width: max-content;
+        height: var(--full);
+        width: var(--full);
         aspect-ratio: 1/1;
     }
-
+    .apps-container a{
+        height: var(--full);
+        width: var(--full);
+        aspect-ratio: 1/1;
+    }
 }
 
 /*--------------------button---------------------------*/
@@ -450,7 +460,7 @@ section::backdrop{
     background-color: var(--section-color1);
 }
 
-@media screen and (max-width: 1500px){
+@media screen and (max-width: 1024px){
     .section { 
         flex-direction: column;
         gap: var(--margin-size); 
@@ -592,7 +602,7 @@ section::backdrop{
     height: var(--tq);
     aspect-ratio: 1/1;
 }
-@media screen and (max-width: 1500px){
+@media screen and (max-width: 1024px){
     .trip-container{
         flex-direction: column;
         margin-right: 5%;
@@ -707,7 +717,7 @@ ul{
     color: var(--font-color);
     pointer-events: all;
 }
-@media screen and (max-width: 1500px){
+@media screen and (max-width: 1024px){
     .footer{
         height: 20%;
         background-color: var(--boxcolor);
