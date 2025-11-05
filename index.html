@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" >
+        <meta http-equiv="X-UA-Compatible" content="IE =edge">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+        <title>Jason Peng</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <main>
+            <div class = "hotbar">
+                <a href="#page1" class = "pg1 link"> Home </a>
+                <a href=".\resources\Jason_Peng_Resume.pdf"target="_blank" rel="noopener noreferrer"> Resume </a>
+                <a id="modal-link"> Contact </a>
+                <a href="#page2" class = "pg2 link"> Experience </a>
+                <a href="#page3" class = "pg3 link"> Projects </a>
+                <div class="circle" id="darkMode">
+                    <img id="darkModePic" src=".\pictures\sun.png" alt="darkModePic">
+                </div>
+            </div>
+
+            <section class = "modal-cont" id = "modal">
+                <section class = "modal">
+                    <button class = "modal-content" id = "close" >X</button>
+                    <div class = "modal-content">
+                        <h1>Contact me!</h1>
+                        <form class="modal-form" id = "contact-form"method ="post" action = "mailto:Jasonpeng970@gmail.com" enctype="text/plain">
+                            <div>
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your name" class="form-input" required>
+                            </div>
+                            <div>
+                                <label for="email"> Email</label>
+                                <input type= "text" id = "email" name = "email" placeholder="Enter Your Email Address" class="form-input" required>
+                            </div>
+                            <div>
+                                <label for="message-box"> Message</label>
+                                <textarea type = "text" id="message-box" name = "message" rows = "5" placeholder="Type your message here!" class = "form-input"></textarea>
+                            </div>
+                            <input type="submit" value="Send" class ="submit-btn">
+                        </form>
+                        <p id="status"></p>
+                    </div>
+                    
+                </section>
+            </section>
+            <div class="page" id = "page1">
+                <div class = "textbox">
+                    <div class = "text">
+                        <h1> About me! </h1>
+                        <p>I’m a Biomedical and Electrical Engineering student at McMaster University dedicated to transforming ideas into impactful innovations. Combining my technical background in circuitry, coding and engineering design with a deep understanding of the health sciences, I strive to develop solutions that drive efficiency and improve lives. Leadership, collaboration and creativity fuel my approach to engineering for a better future. </p>
+                        <div class = "b-container" id = "page-1-bc">
+                            <button class="t-button" id = "resume"> Resume </button>
+                            <button class="t-button" id = "open"> Contact </button>
+                        </div>
+                    </div>
+                    <div class="leftside">
+                        <div class = "picture">
+                            <img src=".\pictures\IMG_4936.jpg" alt="Headshot">
+                        </div>
+                        <div class = "apps-container"> 
+                            <a href="https://www.linkedin.com/in/jason-peng-750624277/" target="_blank" rel="noopener noreferrer">
+                                <img src=".\pictures\Linkedin.png" alt="">
+                            </a>
+                            <a href="https://github.com/jasonpengg"target="_blank" rel="noopener noreferrer">
+                                <img src=".\pictures\Github.png" alt="">
+                            </a>
+                            <a href="https://www.instagram.com/jason.png_/"target="_blank" rel="noopener noreferrer">
+                                <img src=".\pictures\Instagram.png" alt="">
+                            </a>
+                            <a href="https://curious-vise-ce2.notion.site/Jason-Peng-106598c322dd80c6bbf6ee6d86b8bd66"target="_blank" rel="noopener noreferrer">
+                                <img src=".\pictures\Notion.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class ="page" id = "page2"> 
+                <div class = "section-container">
+                    <div class = "section" id ="section1">
+                        <div class = "text-section">
+                            <h1>Ontario Engineering Competition</h1>
+                            <div class ="h2-row">
+                                <h2>Third place finalist</h2>
+                                <h2>2024-2025</h2>
+                            </div>
+                            <p>The Ontario Engineering Competition (OEC) is an annual three-day competition that brings together more than 300 of the province’s brightest engineering students. After placing first at the university level, my team and I represented McMaster at OEC 2025, where we placed 3rd in the consulting category. Our task was to design a detailed solution to the large-scale engineering problem of traffic congestion in a hypothetical Canadian city. We outcompeted a handful of strong teams, with strategic planning, strong leadership and effective problem solving. My experience with OEC strengthened my passion for cross-collaborative engineering design and gave me experience working under pressure with real world constraints.</p>
+                        </div>
+                        <div class = "caro">
+                            <div class = "carousel">
+                                <div class = "img-slides"> 
+                                    <div id = "img-1">
+                                        <img src=".\pictures\oec1.png" alt="Headshot">
+                                    </div>
+                                    <div id = "img-2">
+                                        <img src=".\pictures\oec2.jpeg" alt="Headshot">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "section" id ="section2">
+                        <div class = "text-section">
+                            <h1>McMaster Engineering Society</h1>
+                            <div class ="h2-row">
+                                <h2>Mentorship Coordinator</h2>
+                                <h2>2025-2026</h2>
+                            </div>
+                            <p>The McMaster Engineering Society is McMaster Engineering’s official undergraduate student society offering professional, conference, academic, athletic, social, wellness, and mentorship opportunities. As mentorship coordinator, I oversee and facilitate the operations of the MES Mentorship program, pairing students, organizing events, managing our annual budget and performing outreach to incoming students and community partners. This year, under my leadership and passion for student involvement, we have 100+ students involved in the program forming meaningful relationships to enhance their experience at McMaster Engineering.</p>
+                        </div>
+                        <div class = "caro">
+                            <div class = "carousel">
+                                <div class = "img-slides"> 
+                                    <div id = "img-1">
+                                        <img src=".\pictures\mes1.jpeg" alt="Headshot">
+                                    </div>
+                                    <div id = "img-2">
+                                        <img src=".\pictures\mes2.png" alt="Headshot">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "section" id ="section3">
+                        <div class = "text-section">
+                            <h1>McMaster Engineering Competition </h1>
+                            <div class ="h2-row">
+                                <h2>Competition Lead</h2>
+                                <h2>2025-2026</h2>
+                            </div>
+                            <p>The McMaster Engineering Competition is the qualifying competition to be able to represent the university at the Ontario Engineering Competition. In 2024, I successfully placed first in the consulting category with my teammates, designing a thorough, plausible and innovative solution to designing a safer city under strict constraints for proposed stakeholders. After experiencing the value in competing in the MEC, I took on the role of competition lead for the same category. Now, I design, oversee and implement all logistics for the Consulting Competition, ensuring the best experience for incoming competitors. </p>
+                        </div>
+                        <div class = "caro">
+                            <div class = "carousel">
+                                <div class = "img-slides"> 
+                                    <div id = "img-1">
+                                        <img src=".\pictures\mec1.png" alt="Headshot">
+                                    </div>
+                                    <div id = "img-2"> 
+                                        <img src=".\pictures\mec2.png" alt="Headshot">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "section" id ="section4">
+                        <div class = "text-section">
+                            <h1>McMaster Dragon Boat Club</h1>
+                            <div class ="h2-row">
+                                <h2>Medalist</h2>
+                                <h2>2024-2025</h2>
+                            </div>
+                            <p>The McMaster Dragon Boat club is a team of dedicated, high-level students that compete in the competitive sport of Dragon Boat. As a paddler, I train upwards of 10 hours a week in both on-water and off-water practices. This past year, our team had top placements at Canadian Dragon Boat Championships in Montreal, securing us a spot at the 2026 IDBF Club Crew World Championships in Taiwan. Through my involvement with the sport, I’ve developed a deep respect for teamwork under pressure and the value of consistent effort. This experience has also sharpened my ability to perform in a fast-paced, collaborative environment. </p>
+                        </div>
+                        <div class = "caro">
+                            <div class = "carousel">
+                                <div class = "img-slides"> 
+                                    <div id = "img-1"> 
+                                        <img src=".\pictures\Dboat1.jpg" alt="Headshot">
+                                    </div>
+                                    <div id = "img-2"> 
+                                        <img src=".\pictures\Dboat2.jpeg" alt="Headshot">
+                                    </div>
+                                    <div id = "img-3">
+                                        <img src=".\pictures\Dboat3.jpg" alt="Headshot">
+                                    </div>
+                                    <div id = "img-4">
+                                        <img src=".\pictures\Dboat4.jpeg" alt="Headshot">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "section" id ="section5">
+                        <div class = "text-section">
+                            <h1>iBioMed Design Show Case</h1>
+                            <div class ="h2-row">
+                                <h2>Project manager</h2>
+                                <h2>2024-2025</h2>
+                            </div>
+                            <p>As Project Manager for the McMaster Design Showcase, I led the development of a custom hip implant prototype for a patient with Legg-Calve-Perthes Disease. I coordinated timelines, delegated tasks, and ensured our design met technical and patient needs. I also oversaw the creation of our digital poster and 3D model, integrating visual design with engineering communication. This role strengthened my leadership, collaboration, and presentation skills while reinforcing my ability to manage complex projects in a digital environment.</p>
+                        </div>
+                        <div class = "caro">
+                            <div class = "carousel">
+                                <div class = "img-slides"> 
+                                    <div id = "img-1"> 
+                                        <img src=".\pictures\ds1.png" alt="Headshot">
+                                    </div>
+                                    <div id = "img-2">
+                                        <img src=".\pictures\ds2.png" alt="Headshot">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                    <button class="s-button" id = "prev"> ❮❮ </button>
+                    <button class="s-button" id = "next"> ❯❯ </button>
+                
+            </div>
+            <div class = "page" id = "page3">
+                <div class = "trip-container">
+                    <div class = "trip-section">
+                        <div class="trip-text">
+                            <h1>Maple Quest</h1>
+                            <p>This single-player RPG interactive game allows you to explore the map and battle monsters in the field. It utilizes mouse and keyboard input to move around your character. </p>
+                        </div>
+                        <video id="clip1" muted>
+                            <source src="videos/clip1.mp4">
+                        </video>
+                        <div class = "apps-container">
+                            <a href="https://github.com/jasonpengg/SimpleRPG" target="_blank" rel="noopener noreferrer">
+                                <img src=".\pictures\arrow.png" alt="">
+                            </a>
+                        </div>
+                        
+                    </div>
+                    <div class = "trip-section">
+                        
+                        <div class="trip-text">
+                            <h1>Connect 4</h1>
+                            <p>This is an online, interactive Connect 4 game that allows you to play with others virtually. It utilizes sockets and package data to enable real-time gameplay between two players over a network.</p>
+                        </div>
+                        
+                            <video id="clip2" muted>
+                                <source src="videos/clip2.mp4">
+                            </video>
+
+                        
+                        <div class = "apps-container">
+                            <a href="https://github.com/jasonpengg/Connect-4" target="_blank" rel="noopener noreferrer">
+                                <img src=".\pictures\arrow.png" alt="">
+                            </a>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class = "trip-section">
+                        
+                        <div class="trip-text">
+                            <h1>Physics Calculator </h1>
+                            <p>This is a simple calculator that lets you visualize the concepts of conservation of energy and height. It helps with studying and quizzes you on topics! </p>
+                        </div>
+                        
+                            <video id="clip3" muted>
+                                <source src="videos/clip3.mp4">
+                            </video>
+
+                        
+                        <div class = "apps-container">
+                            <a href="https://github.com/jasonpengg/Conservation-of-Mechanical-Energy" target="_blank" rel="noopener noreferrer">
+                                <img src=".\pictures\arrow.png" alt="">
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class = "footer">
+                <div class = "footer-section">
+                    <div class="box" id="box1">
+                        <ul>
+                            <li> Toronto, Ontario </li>
+                            <li> 647-891-0216 </li>
+                            <li> Jasonpng006@gmail.com </li>
+                        </ul>
+                    </div>
+                    <div class="box" id="box2">
+                        <h2>Social Media!</h2>
+                        <div class = "apps-container"> 
+                            <a href="https://www.linkedin.com/in/jason-peng-750624277/" target="_blank" rel="noopener noreferrer">
+                                <img src=".\pictures\Linkedin.png" alt="">
+                            </a>
+                            <a href="https://github.com/jasonpengg"target="_blank" rel="noopener noreferrer">
+                                <img src=".\pictures\Github.png" alt="">
+                            </a>
+                            <a href="https://www.instagram.com/jason.png_/"target="_blank" rel="noopener noreferrer">
+                                <img src=".\pictures\Instagram.png" alt="">
+                            </a>
+                            <a href="https://curious-vise-ce2.notion.site/Jason-Peng-106598c322dd80c6bbf6ee6d86b8bd66"target="_blank" rel="noopener noreferrer">
+                                <img src=".\pictures\Notion.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="box" id= "box3">
+                        <button id = "resume1">Resume</button>
+                        <button id = "return" class = "pg1 link" onclick = "location.href='#page1'">Back To The Top</button>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init({
+                publicKey: "o-xI1Q_gJRtWB2UU2",
+                });
+            })();
+        </script>
+        <script src="script.js"></script>
+    </body>
+</html>
